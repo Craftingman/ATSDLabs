@@ -129,53 +129,6 @@ namespace ATSDLab1
                 this.AddItem(current.Data);
                 current = current.Next;
             }
-            /*
-            if (newList.IsEmpty())
-            {
-                return;
-            }
-            if (this.IsEmpty())
-            {
-                this.first = newList.first;
-                this.last = newList.last;
-                return;
-            }
-            MyNode<T> current = first;
-            MyNode<T> newCurrent = newList.first;
-            while (current != null)
-            {
-                if (newCurrent == null)
-                {
-                    break;
-                }
-                if (newCurrent.Data.CompareTo(current.Data) <= 0)
-                {
-                    MyNode<T> newNode = new MyNode<T>(newCurrent.Data);
-                    newNode.Next = first;
-                    first = newNode;
-                    Count++;
-                    newCurrent = newCurrent.Next;
-                    continue;
-                }
-                if (current.Data.CompareTo(newCurrent.Data) < 0 && current.Next.Data.CompareTo(newCurrent.Data) >= 0)
-                {
-                    MyNode<T> newNode = new MyNode<T>(newCurrent.Data);
-                    newNode.Next = current.Next;
-                    current.Next = newNode;
-                    newCurrent = newCurrent.Next;
-                    Count++;
-                    continue;
-                }
-                if (current.Data.CompareTo(newCurrent.Data) < 0)
-                {
-                    MyNode<T> newNode = new MyNode<T>(newCurrent.Data);
-                    current.Next = newNode;
-                    current = newNode;
-                    last = current;
-                    newCurrent = newCurrent.Next;
-                }
-            }
-            */
         }
         public void PrintList()
         {
